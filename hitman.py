@@ -1,14 +1,19 @@
-# Loop through
-# ---- make request & start timer
-# ---- check response status
-# ---- if response status is 200
-# ---- ---- stop timer, calculate elapsed time
-# ---- ---- push elapsed time to list
-# ---- else print appropriate message
-
-# Calculate min, max and average latency.
-
-# ~~~~~FUTURE: plot a graph.
+# |*|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|*|
+# |*| AUTHOR: Sandesh Gade                                  |*|
+# |*| github: github.com/cyberbeast                         |*|
+# |*| email: sandeshgade@gmail.com                          |*|
+# |*|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|*|
+# |*| ALGORITHM for script:                                 |*|
+# |*| 1.    Loop through                                    |*|
+# |*| 2.    ---- make request & start timer                 |*|
+# |*| 3.    ---- check response status                      |*|
+# |*| 4.    ---- if response status is 200                  |*|
+# |*| 5.    ---- ---- stop timer, calculate elapsed time    |*|
+# |*| 6.    ---- ---- push elapsed time to list             |*|
+# |*| 7.    ---- else print appropriate message             |*|
+# |*| 8.    Calculate min, max and average latency.         |*|
+# |*| 9.    plot a graph and export graph as image.         |*|
+# |*|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|*|
 
 import sys
 import requests
