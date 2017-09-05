@@ -15,8 +15,8 @@ import requests
 from requests.exceptions import HTTPError
 import time
 import matplotlib
-import matplotlib.pyplot as plt
 matplotlib.use('Agg')
+import matplotlib.pyplot as plt
 
 # read params
 url = input('Enter url: \t')
