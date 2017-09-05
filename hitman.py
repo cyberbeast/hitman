@@ -68,6 +68,6 @@ p2 = plt.bar(ind, round_trip_time_data_only_list, bottom=round_trip_without_data
 plt.ylabel('Latency (s)')
 plt.xlabel('HIT')
 plt.legend((p1[0], p2[0]), ('INIT+HEADERS', 'DATA'))
-print("Saving graph as " + '"' + file_prefix + " " + time.strftime("%c")'".png')
+print("Saving graph as " + '"' + file_prefix + " " + time.strftime("%c") + '.png"')
 plt.savefig(file_prefix + " " + time.strftime("%c"))
 # plt.show()
