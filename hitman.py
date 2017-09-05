@@ -61,11 +61,13 @@ print("MIN \t " + str(min(total_latency_list)))
 print("AVG \t " + str(sum(total_latency_list)/len(total_latency_list)))
 
 # GRAPHING
+print("Results calculated. Generating graphs...")
 ind = [x for x in range(max_hits)]
 p1 = plt.bar(ind, round_trip_without_data_list, color='#d62728')
 p2 = plt.bar(ind, round_trip_time_data_only_list, bottom=round_trip_without_data_list)
 plt.ylabel('Latency (s)')
 plt.xlabel('HIT')
 plt.legend((p1[0], p2[0]), ('INIT+HEADERS', 'DATA'))
+print("Saving graph as " + '"' + file_prefix + " " + time.strftime("%c")'".png')
 plt.savefig(file_prefix + " " + time.strftime("%c"))
 # plt.show()
