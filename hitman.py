@@ -36,7 +36,7 @@ while(cur_hits < max_hits):
 
     end = timer()
     cur_hits += 1
-    print("HIT " + str(cur_hits) + "\t:\t" + str(r.status_code) + "\t" + str(end - start))
+    print("HIT " + str(cur_hits) + "\t:\t" + str(r.status_code) + "\t" + str(end - start) + "\t" + str(r.elapsed.total_seconds()))
     latency_list.append(end-start)
  
 print("Testing complete. Calculating results...")
